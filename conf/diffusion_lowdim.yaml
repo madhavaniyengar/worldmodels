@@ -1,0 +1,48 @@
+defaults:
+  - override hydra/job_logging: disabled
+
+hydra:
+  run:
+    dir: outputs/${wandb.name}_${now:%Y-%m-%d_%H-%M-%S}
+
+epochs: 10000
+batch_size: 512
+learning_rate: 1e-4
+pred_horizon: 1
+num_layers: 4
+hidden_dim: 256
+t_embed_dim: 128
+dropout: 0.2
+data_path: null
+device: cuda
+debug: false
+
+
+cond_modalities: ['force', 'velocity', 'action']
+# future_cond_modalities: ['future_force', 'future_velocity']
+future_cond_modalities: []
+gen_modalities: ['force', 'velocity']
+# gen_modalities: ['force']
+# gen_modalities: ['velocity']
+# gen_modalities: ['action']
+
+fusion_method: "concat"
+
+
+state_dim: 192
+force_dim: 78
+velocity_dim: 78
+action_dim: 17
+
+
+save_checkpoint_every: 2500
+checkpoint_dir: "checkpoints"
+resume_from_checkpoint: null
+checkpoint_path: null
+
+validation_freq: 50
+patience: 500
+
+wandb:
+  name: final_h${pred_horizon}_b${batch_size}_lr${learning_rate}_l${num_layers}_hd${hidden_dim}_td${t_embed_dim}_${gen_modalities}_${cond_modalities}_dr${dropout}_fm${fusion_method}
+

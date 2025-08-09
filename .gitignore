@@ -1,0 +1,12 @@
+*.mp4
+__pycache__/
+*.png
+outputs/
+*.egg-info/
+slurm_logs/
+*.gif
+wandb/
+*.out
+*.log
+*.pt
+*.sh

@@ -1,0 +1,20 @@
+# Concat 
+# checkpoint_path: /home/madhavai/worldmodel/outputs/final_h1_b512_lr0.0001_l4_hd256_td128_['force', 'velocity']_['force', 'velocity', 'action']_dr0_fmconcat_2025-07-28_23-18-10/checkpoints/best_model.pt
+
+# Add
+# checkpoint_path: /home/madhavai/worldmodel/outputs/final_h1_b512_lr0.0001_l4_hd256_td128_['force', 'velocity']_['force', 'velocity', 'action']_dr0_fmadd_2025-07-28_23-44-43/checkpoints/best_model.pt
+
+# Force
+# checkpoint_path: /home/madhavai/worldmodel/outputs/final_h1_b512_lr0.0001_l4_hd256_td128_['force']_['force', 'velocity', 'action']_dr0_fmconcat_2025-07-28_23-26-08/checkpoints/best_model.pt
+
+# Velocity
+# checkpoint_path: /home/madhavai/worldmodel/outputs/final_h1_b512_lr0.0001_l4_hd256_td128_['velocity']_['force', 'velocity', 'action']_dr0_fmconcat_2025-07-28_23-29-09/checkpoints/best_model.pt
+
+# IK
+# checkpoint_path: /home/madhavai/worldmodel/outputs/final_h1_b512_lr0.0001_l4_hd256_td128_['action']_['force', 'velocity', 'action']_dr0.2_fmconcat_2025-07-29_01-28-05/checkpoints/best_model.pt
+
+# Baseline f/v
+# checkpoint_path: /home/madhavai/worldmodel/outputs/baseline_h1_b512_lr0.0001_l2_hd256_['force', 'velocity']_['force', 'velocity', 'action']_dr0_fmconcat_2025-07-29_00-55-59/checkpoints/best_model.pt
+
+# Baseline IK
+checkpoint_path: /home/madhavai/worldmodel/outputs/baseline_h1_b512_lr0.0001_l2_hd256_['action']_['force', 'velocity', 'action']_dr0.1_fmconcat_2025-07-29_11-43-42/checkpoints/best_model.pt
