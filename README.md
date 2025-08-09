@@ -22,4 +22,4 @@ TODOs
 ## Evaluation
 You can find evaluation scripts in eval/ and visualize results using visualization/
 
-If you have questions feel free to email or slack me!
+I will try to update the documentation better when I have time. If you have questions feel free to email or slack me!
